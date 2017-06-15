@@ -34,7 +34,7 @@ var mainState = {
         this.weapon = game.add.weapon(40, 'bullet');
         this.bullets = game.add.group();
         this.armorPackSound = game.add.audio("armorPackSound");
-        this.getArmorPackSound = game.add.audio("getArmorPack");
+        this.getArmorPackSound = game.add.audio("getArmorPack",1);
         this.killSound = game.add.audio("killSound");
         this.killEmUp = game.add.audio("killemup");
         this.armorPacks = game.add.group();
@@ -43,7 +43,7 @@ var mainState = {
         this.shooting = game.add.audio("shooting");
         this.dropping = game.add.audio("dropping");
         this.dragonRoar = game.add.audio("dragonRoar");
-        this.background = game.add.audio("background");
+        this.background = game.add.audio("background",0.5);
         this.background.play();
         this.background.loopFull();
         this.weapon.bulletSpeed = 400;
