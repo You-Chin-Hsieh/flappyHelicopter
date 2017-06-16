@@ -1,7 +1,11 @@
 var gameOver = {
     preload : function() {
 		game.load.image('button1', './assets/button1.png');
+<<<<<<< HEAD
         game.load.image('gameOver', './assets/gameOver.png');
+=======
+        game.load.image('gameOver', 'flappyHelicopter/assets/gameover.png');
+>>>>>>> origin/master
     },
 
     create: function () {
