@@ -1,7 +1,7 @@
 var gameOver = {
     preload : function() {
 		game.load.image('button1', './assets/button1.png');
-        game.load.image('gameOver', './assets/gameOver.png');
+        game.load.image('gameOver', './assets/gameover.png');
     },
 
     create: function () {
