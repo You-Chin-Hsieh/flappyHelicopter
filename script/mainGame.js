@@ -297,7 +297,14 @@ var mainState = {
         this.chopper.position.y +=30;
     },
     restartGame: function(){
-        game.state.start("gameOver");
+        game.input.keyboard.removeKey(Phaser.Keyboard.W);
+        game.input.keyboard.removeKey(Phaser.Keyboard.A);
+        game.input.keyboard.removeKey(Phaser.Keyboard.S);
+        game.input.keyboard.removeKey(Phaser.Keyboard.D);
+        game.input.keyboard.removeKey(Phaser.Keyboard.F);
+        var Timer = game.time.events.add(1000,function(){
+            game.state.start("gameOver")
+        })
     },
 
 
